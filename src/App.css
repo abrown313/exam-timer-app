@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500');
+
+body {
+  background: linear-gradient(to right, #002277, #330055);
+}
+
+/***OVERALL LAYOUT***/
+
+.App {
+  padding-top: 5vh;
+  font-family: Lato, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.time_container {
+  width: 50%;
+}
+
+.clar_container {
+  width: 40%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/***TIME MANAGEMENT COLUMN***/
+
+/*TIME FORM BOX*/
+
+#form {
+  height: 10vh;
+  background: #99CCFF;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+  font-weight: 400;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form_bits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#start_input_label, #end_input_label {
+  width: 10%;
+  font-size: 30px;
+  color: #fff;
+  padding-right: 10px;
+}
+
+#start_input_time, #end_input_time {
+  font-family: Roboto Mono, monospace;
+  font-weight: 400;
+  border: solid 1px #fff;
+  width: 16%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: solid 1px #ffffff;
+  outline: none;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+#gap1 {
+  width: 5%;
+}
+
+select {
+  color: #000;
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-family: Roboto Mono, monospace;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+button {
+  color: #fff;
+  background: transparent;
+  border: solid 1px #ffffff;
+  border-radius: 3px;
+  font-weight: 400;
+  font-size: 20px;
+  outline: none;
+}
+
+button:hover {
+  background-color: rgba(255,255,255,0.25);
+}
+
+input[type="text"] {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  color: #000;
+  outline: none;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+input[type="text"]::placeholder {
+  color: #777777;
+}
+
+/*CURRENT TIME BOX*/
+
+.current_time_region {
+  height: 35vh;
+  background: #99CCFF;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 5vh;
+}
+
+/*COUNTDOWN BOX*/
+
+.countdown_region {
+  height: 35vh;
+  background: #99CCFF;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 100%;
+  margin: 0 auto;
+}
+
+#current_time_region, #countdown_region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#time, #time_label {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 8vh;
+  color: #fff;
+}
+
+#time_label {
+  justify-content: bottom;
+}
+
+#time {
+  color: #000;
+}
+
+#input_error {
+  color: #FF0000;
+  font-size: 15px;
+}
+
+/***CLARIFICATIONS COLUMN***/
+
+#clarifications {
+  background: #9D99FF;
+  box-shadow: 0px 13px 40px -13px rgba(0,0,0,0.75);
+  width: 100%;
+  height: 90vh;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+#clarifications_title {
+  font-family: Lato, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: #fff;
+}
+
+#textarea {
+  resize: none;
+  overflow-y: scroll;
+  width: 90%;
+  height: 75vh;
+  font-family: Roboto Mono, monospace; 
+  font-weight: 500;
+  font-size: 20px;
+  background: rgba(255,255,255,0.5);
+  outline: none;
+  border: 0;
+}
